@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+      }
+
+      .btn {
+        background-color: red;
+        color: white;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+      }
+
+      img {
+        width: auto;
+        height: auto;
+        margin: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Find a rabbit</button>
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/rabbit.png" alt="" class="rabbit" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+      <img src="/img/carrot.png" alt="" class="carrot" />
+    </div>
+    <script>
+      const btn = document.querySelector(".btn");
+      const rabbit = document.querySelector(".rabbit");
+
+      btn.addEventListener("click", () => {
+        rabbit.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    </script>
+  </body>
+</html>
